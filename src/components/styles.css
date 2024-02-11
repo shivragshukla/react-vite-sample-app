@@ -114,6 +114,52 @@ a.active {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.product-extra {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.product-extra .nav {
+    display: flex;
+    gap: 2rem;
+}
+.product-extra a {
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid #191717;
+    color: #191717;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: 500ms ease-in;
+}
+.product-extra a:hover, a.active-item {
+    background-color: #191717;
+    color: #FFFFFF;
+}
+.product-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+table {
+    margin-top: 2rem;
+}
+th, td {
+    padding: 6px 12px;
+}
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.product-images > div {
+    padding: 1rem;
+    border: 1px solid #191717;
+}
+.product-images > div > img {
+    width: 150px;
+}
 footer {
     display: flex;
     justify-content: center;

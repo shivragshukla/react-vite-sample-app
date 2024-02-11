@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Products from './pages/Products.jsx'
 import ProductDetail from './pages/ProductDetail.jsx'
+import ProductStock from './pages/ProductStock.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,7 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index element={ <Home />} />
           <Route path='about' element= {<About />} />
           <Route path='products' element= {<Products />} />
-          <Route path='products/:id' element= {<ProductDetail />} />
+          <Route path='products/:id' element= {<ProductDetail />}>
+            <Route index element={ <ProductStock/>} />
+          </Route>
         </Route>
       </Routes>    
     </BrowserRouter>

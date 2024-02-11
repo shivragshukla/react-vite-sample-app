@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, Outlet, useParams } from "react-router-dom";
 
 function ProductDetail() {
 
@@ -19,10 +19,11 @@ function ProductDetail() {
         <>
             <h1 className='title'>Product</h1>
             <Link to="../" relative="path" > &larr; Back to all products</Link>
-            <div className="product">
+            <div>
                 {
                     product
                     ?   <>
+                        <div className="product">
                            <img className="image" src={product.thumbnail} alt={product.title} />
                            <div className="detail">
                                <h3 className="title">{ product.title }</h3>
@@ -31,6 +32,20 @@ function ProductDetail() {
                                <p><b>Rating: </b>{ product.rating }</p>
                                <p><b>Price: </b>{ product.price }</p>
                                <p className="description">{ product.description }</p>
+                           </div>
+                           </div>
+                           <div className="product-extra">
+                                <div className="nav">
+                                    <NavLink 
+                                        to="."
+                                        className={({isActive}) => isActive ? 'active-item' : null}
+                                    >Stock</NavLink>
+                                    <NavLink to="images">Images</NavLink>
+                                </div>
+                                <div className="product-wrapper">
+                                    <Outlet context={product} />
+                                </div>
+                            
                            </div>
                         </>
                     :   <p>No data found</p>
