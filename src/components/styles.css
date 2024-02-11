@@ -10,6 +10,7 @@
 }
 header {
     display: flex;
+    gap: 1rem;
     justify-content: flex-start;
     align-items: center;
     padding: 20px 25px;
@@ -30,10 +31,10 @@ header .logo h3 {
 .menu {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 .menu a {
     padding: 20px 25px;
-    margin-right: 0.5rem;
     text-decoration: none;
     color: #FFFFFF;
     background-color: #2b88d8;
@@ -56,6 +57,7 @@ a.active {
     align-items: center;
     flex-wrap: wrap;
     font-size: 18px;
+    min-height: 570px;
 }
 .content > .title {
     margin-bottom: 2rem;
