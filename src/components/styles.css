@@ -41,7 +41,10 @@ header .logo h3 {
     transition: 1s ease;
 }
 .menu a:hover {
-    background-color: #106ebe;
+    background-color: #004578;
+}
+a.active {
+    background-color: #004578;    
 }
 .content {
     margin-top: 1rem;
