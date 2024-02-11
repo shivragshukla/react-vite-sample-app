@@ -57,14 +57,34 @@ a.active {
     flex-wrap: wrap;
     font-size: 18px;
 }
-.title {
+.content > .title {
     margin-bottom: 2rem;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.products .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.products .item .image {
+    width: 250px;
+}
+.products .item .title {
+    margin: 1rem;
 }
 
 footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
