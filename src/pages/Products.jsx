@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Products() {
 
     const [products, setProducts] = useState([]);
-
 
     async function fetchProducts() {
         const resposne = await fetch(`https://dummyjson.com/products?limit=10`);
@@ -23,10 +23,10 @@ function Products() {
                 {
                     products && products.length > 0
                     ?   products.map(product => 
-                            <div className="item" key={product.id}>
+                            <Link to={`${product.id}`} className="item" key={product.id}>
                                 <img className="image" src={product.thumbnail} alt={product.title} />
                                 <h3 className="title">{ product.title }</h3>
-                            </div>
+                            </Link>
                         )
                     : <p>No data found</p>
                 }

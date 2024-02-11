@@ -76,6 +76,8 @@ a.active {
     border: 1px solid #CCCCCC;
     border-radius: 10px;
     padding: 10px 15px;
+    text-decoration: none;
+    color: #191717;
 }
 .products .item .image {
     width: 250px;
@@ -83,7 +85,33 @@ a.active {
 .products .item .title {
     margin: 1rem;
 }
-
+.product {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #868181;
+    border-radius: 10px;
+}
+.product img {
+    width: 350px;
+}
+.product .detail {
+    padding: 2rem;
+    background-color: #eff6fc;
+}
+.product .detail .title {
+    font-size: 22px;
+    padding-bottom: 2rem;
+}
+.product .detail p{
+    margin-bottom: 1rem;
+}
+.product .detail .description {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 footer {
     display: flex;
     justify-content: center;
