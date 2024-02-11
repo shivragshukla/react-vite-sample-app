@@ -38,9 +38,13 @@ function ProductDetail() {
                                 <div className="nav">
                                     <NavLink 
                                         to="."
+                                        end
                                         className={({isActive}) => isActive ? 'active-item' : null}
                                     >Stock</NavLink>
-                                    <NavLink to="images">Images</NavLink>
+                                    <NavLink 
+                                        to="images"
+                                        className={({isActive}) => isActive? 'active-item' : null}
+                                    >Images</NavLink>
                                 </div>
                                 <div className="product-wrapper">
                                     <Outlet context={product} />

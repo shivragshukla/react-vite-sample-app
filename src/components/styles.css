@@ -156,6 +156,7 @@ th, td {
 .product-images > div {
     padding: 1rem;
     border: 1px solid #191717;
+    border-radius: 10px;
 }
 .product-images > div > img {
     width: 150px;
