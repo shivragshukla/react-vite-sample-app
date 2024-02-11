@@ -1,3 +1,4 @@
+import Home from '../pages/Home';
 import Footer from './Footer';
 import Header from './Header';
 import './styles.css'
@@ -7,10 +8,7 @@ function Layout() {
         <div className="container">
             <Header />
             <main className="content">
-                <div>
-                    <h1 className='title'>Home page</h1>
-                    <p>This is a basic page</p>
-                </div>
+                <Home></Home>
             </main>
             <Footer />
         </div>
