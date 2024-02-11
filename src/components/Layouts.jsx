@@ -1,24 +1,26 @@
+import './styles.css'
 
 function Layout() {
     return (
-        <div>
+        <div className="container">
             <header>
-                <div>
-                    <h3>Logo</h3>
+                <div className="logo">
+                    <h3>Company Logo</h3>
                 </div>
-                <nav>
+                <nav className="menu">
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Products</a>
                 </nav>
             </header>
-            <main>
+            <main className="content">
                 <div>
+                    <h1 className='title'>Home page</h1>
                     <p>This is a basic page</p>
                 </div>
             </main>
             <footer>
-                &copy; {new Date().getFullYear()} Basic react site
+                <p>&copy; {new Date().getFullYear()} Basic react site </p>
             </footer>
         </div>
     );
